@@ -63,7 +63,6 @@
 	                    var y = j * _this.tileHeight;
 	                    _this.tileSet[i][j] = { tile: tile_1.default, used: false, updated: false };
 	                    _this.tileSetUpdate[i][j] = [];
-	                    console.log(x, y);
 	                    box.beginFill(0xbdc3c7);
 	                    box.drawRect(x, y, _this.tileWidth, _this.tileHeight);
 	                    box.lineStyle(1, 0xecf0f1, 1);
@@ -85,7 +84,6 @@
 	            _this.prepareTiles();
 	            _this.addTwo();
 	            _this.addTwo();
-	            console.log(_this.highestNumberText);
 	            _this.highestNumberText.text = _this.highestNumber.toString();
 	            _this.cursors = _this.game.input.keyboard.createCursorKeys();
 	            _this.canMove = true;
@@ -175,7 +173,6 @@
 	                _this.moved = false;
 	                _this.addTwo();
 	                _this.prepareTileSet();
-	                console.log(_this.highestNumber);
 	            }
 	        };
 	        this.prepareTileSet = function () {

@@ -46,7 +46,6 @@ class SimpleGame {
                 this.tileSet[i][j] = {tile:Tile, used:false, updated:false};
                 this.tileSetUpdate[i][j] = [];
 
-                console.log(x,y);
                 box.beginFill(0xbdc3c7);
                 box.drawRect(x,y, this.tileWidth, this.tileHeight);
                 box.lineStyle(1,0xecf0f1,1)
@@ -76,7 +75,6 @@ class SimpleGame {
         this.prepareTiles();
         this.addTwo();
         this.addTwo();
-        console.log(this.highestNumberText);
         this.highestNumberText.text = this.highestNumber.toString();
         this.cursors = this.game.input.keyboard.createCursorKeys();
         this.canMove = true;
@@ -191,7 +189,6 @@ class SimpleGame {
             this.moved = false;
             this.addTwo();
             this.prepareTileSet();
-            console.log(this.highestNumber)
         }
 
     }

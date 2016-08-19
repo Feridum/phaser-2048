@@ -10,7 +10,7 @@
         "target": "es5"
 },
     "files": [
-    "./src/game.ts",
+    "./src/app.ts",
     "./phaser/phaser.d.ts"
 ]
 }
