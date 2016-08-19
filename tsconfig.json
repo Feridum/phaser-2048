@@ -1,0 +1,16 @@
+/**
+ * Created by Olek on 18.08.2016.
+ */
+{
+    "compilerOptions": {
+    "outDir": "./public/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "es5"
+},
+    "files": [
+    "./src/game.ts",
+    "./phaser/phaser.d.ts"
+]
+}
